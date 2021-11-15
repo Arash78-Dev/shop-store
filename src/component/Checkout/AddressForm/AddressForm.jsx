@@ -60,7 +60,7 @@ const AddressForm = ({checkouttoken, next}) => {
 },[ShipingCountry])
 useEffect(()=>{
     if(ShipingSubdivision) fetchoption(checkouttoken.id,ShipingCountry,ShipingSubdivision)
-},[ShipingSubdivision])
+},[checkouttoken.id,ShipingCountry,ShipingSubdivision])
 
 
 
